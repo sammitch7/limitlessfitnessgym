@@ -16,8 +16,8 @@
 <!-- og meta tags -->
   <meta property="og:title" content="Limitless Gym Fitness">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://exampleimage.com/"> <!--FINISH -->
-  <meta property="og:url" content="https://example.com"> <!--FINISH-->
+  <meta property="og:image" content="https://sammitch7.github.io/limitlessfitnessgym/images/facility.jpg"> <!--FINISH -->
+  <meta property="og:url" content="https://sammitch7.github.io/limitlessfitnessgym/"> 
   <meta property="og:description" content="Welcome to Limitless Fitness, where fitness meets community.">
   <meta property="og:locale" content="en_US"> 
   <meta property="og:locale:alternate" content="fr_FR">
@@ -31,10 +31,10 @@
   <meta name="twitter:creator" content="Samantha Mitchell">
   <meta name="twitter:title" content="Limitless Gym Fitness: Unleash Your Strength">
   <meta name="twitter:description" content="Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.">
-  <meta name="twitter:image" content="IMG URL"> <!--FINISH-->
+  <meta name="twitter:image" content="https://sammitch7.github.io/limitlessfitnessgym/images/facility.jpg"> 
 
 <!-- FINISH CANONICAL LINK & ALTERNATIVE LINKS HERE!!!!!!!-->
-<link rel="canonical" href="https://example.com/"> 
+<link rel="canonical" href="https://sammitch7.github.io/limitlessfitnessgym/"> 
 <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.example.com/">
 <link rel="alternate" hreflang="es" href="https://example.com/es/">
 <link rel="alternate" hreflang="fr" href="https://example.com/fr/">
@@ -61,11 +61,17 @@
     <h1>Transform Your Life at Limitless Fitness</h1>
     <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
     <a href="#">Join Now</a>
+
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-    <img src="images/facility.jpg">
 <!--src="images/facility.jpg"-->
-
+    <img alt="A black and white photograph of a large gym room with an open floorplan, floor to ceiling windows, containing cardio machines and weight lifting equipment." 
+      src="images/facility.jpg"
+      srcset="
+        images/facility-320w.jpg,
+        images/facility-768w.jpg
+      "
+    >
   </header>
   <nav>
     <h2 id="hidden">Main Navigation</h2>
@@ -102,10 +108,17 @@
         <li>Specialty Workshops: From functional training to mindfulness sessions.</li>
         <li>Check out our [Class Schedule] for times and detailed descriptions.</li>
       </ul>
+
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-        src="images/classes.jpg"
-
+       <!-- src="images/classes.jpg" -->
+      <img alt="A black and white photograph of people participating in a gym class, lunging while holding a barbell across their shoulders, the camera focused on a woman at the forefront, another woman and man in the background." 
+      src="images/classes.jpg"
+      srcset="
+        images/classes-320w.jpg,
+        images/classes-768w.jpg
+      "
+      >
     </section>
     <section>
       <h2>Personal Training</h2>
@@ -114,9 +127,17 @@
         Ready for a change?
       </p> 
       <a href="#">Book a Free Consultation today!</a>
+
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-        src="images/dumbells.jpg"
+        <!--src="images/dumbells.jpg"-->
+      <img alt="A black and white photograph, two rows of dumbell weights on a rack." 
+      src="images/dumbells.jpg"
+      srcset="
+        images/dumbells-320w.jpg,
+        images/dumbells-768w.jpg
+        "
+      >
 
     </section>
     <section>
@@ -134,12 +155,12 @@
 
 <!--add accessibility to the form-->
       <form method="post" action="https://wp.zybooks.com/form-viewer.php">
-			  <label for="name">Full Name</label>
-			    <input id="name" name="full-name" type="text">
-			  <label for="email">Email</label>
-			    <input id="email" name="email" type="email">
-			  <label for="phone">Phone</label>
-			    <input id="phone" name="phone" type="number">
+			  <label for="name">Full Name<span aria-hidden="true" class="required">*</span></label>
+			    <input required aria-required="true" id="name" name="full-name" type="text">
+			  <label for="email">Email<span aria-hidden="true" class="required">*</span></label>
+			    <input required aria-required="true" id="email" name="email" type="email">
+			  <label for="phone">Phone<span aria-hidden="true" class="required">*</span></label>
+			    <input required aria-required="true" id="phone" name="phone" type="tel">
         <fieldset>
           <legend>Membership Type</legend>
           <label for="membership-type">Select a Membership Option</label>
